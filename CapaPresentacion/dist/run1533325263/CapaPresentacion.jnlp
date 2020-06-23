@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="CapaPresentacion.jnlp">
+  <information>
+    <title>CapaPresentacion</title>
+    <vendor>LomitoFrito</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="CapaPresentacion.jar" size="7328" download="eager" />
+    <jar href="lib\CapaAccesoDatos.jar" size="25945" download="eager" />
+    <jar href="lib\CapaEntidades.jar" size="26212" download="eager" />
+    <jar href="lib\CapaNegocio.jar" size="12197" download="eager" />
+    <jar href="lib\javax.persistence-2.1.0.jar" size="164637" download="eager" />
+    <jar href="lib\ojdbc8.jar" size="4036257" download="eager" />
+    <jar href="lib\org.eclipse.persistence.antlr-2.5.2.jar" size="189645" download="eager" />
+    <jar href="lib\org.eclipse.persistence.asm-2.5.2.jar" size="271204" download="eager" />
+    <jar href="lib\org.eclipse.persistence.core-2.5.2.jar" size="5056217" download="eager" />
+    <jar href="lib\org.eclipse.persistence.jpa-2.5.2.jar" size="1364245" download="eager" />
+    <jar href="lib\org.eclipse.persistence.jpa.jpql-2.5.2.jar" size="1366247" download="eager" />
+    <jar href="lib\org.eclipse.persistence.moxy-2.5.2.jar" size="516317" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="capapresentacion.CapaPresentacion"  name="CapaPresentacion" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="563.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="capapresentacion.PantallaKioscoController">
+    <children>
+        <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KIOSCO LIBROS" />
+        <Button fx:id="botonNuevoPrestamo" layoutX="138.0" layoutY="10.0" mnemonicParsing="false" onAction="#clicNuevoPrestamo" text="Nuevo Prestamo" />
+        <Text layoutX="14.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de Préstamo:" />
+        <Text fx:id="editFechaHoraPrestamo" layoutX="154.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DD-MM-AAAA HH:mm" />
+        <Text layoutX="14.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número del Préstamo:" />
+        <Text fx:id="editNumeroPrestamo" layoutX="154.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="####" />
+        <Text layoutX="14.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selección de Libro:" />
+        <ComboBox fx:id="comboBoxLibros" layoutX="127.0" layoutY="129.0" prefHeight="25.0" prefWidth="163.0" />
+        <Text layoutX="307.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cantidad:" />
+        <TextField fx:id="cantidadLibro" layoutX="371.0" layoutY="129.0" prefHeight="25.0" prefWidth="67.0" />
+        <Button fx:id="botonAgregarLinea" layoutX="457.0" layoutY="129.0" mnemonicParsing="false" onAction="#clicAgregarLinea" text="Agregar Linea" />
+        <Text layoutX="14.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lineas del Préstamo" />
+        <Text layoutX="159.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Préstamo:" />
+        <Text fx:id="editTotalPrestamo" layoutX="272.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$XXXX" />
+        <TableView fx:id="tablaLineasDePrestamo" layoutX="13.0" layoutY="200.0" prefHeight="115.0" prefWidth="534.0">
+            <columns>
+                <TableColumn fx:id="columnaLibro" prefWidth="245.0" text="Libro" />
+                <TableColumn fx:id="columnaCantidad" minWidth="0.0" prefWidth="85.0" text="Cantidad" />
+                <TableColumn fx:id="columnaPrecioLibro" prefWidth="91.0" text="Precio Libro" />
+                <TableColumn fx:id="columnaSubTotal" prefWidth="112.0" text="SubTotal" />
+            </columns>
+        </TableView>
+        <Text layoutX="14.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cantidad Monedas:" />
+        <TextField fx:id="cantidadMonedas" layoutX="127.0" layoutY="323.0" prefHeight="25.0" prefWidth="79.0" />
+        <Text layoutX="219.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Denominación:" />
+        <ComboBox fx:id="comboBoxDenominacion" layoutX="311.0" layoutY="323.0" prefHeight="25.0" prefWidth="110.0" />
+        <Button fx:id="botonAgregarMonedas" layoutX="435.0" layoutY="323.0" mnemonicParsing="false" onAction="#clicAgregarMonedas" text="Agregar Monedas" />
+        <Text layoutX="13.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saldo Disponible de Monedas:" />
+        <Text fx:id="editSaldoDisponible" layoutX="198.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$XXXX" />
+        <Button fx:id="botonTerminarPrestamo" layoutX="13.0" layoutY="395.0" mnemonicParsing="false" onAction="#clicTerminarPrestamo" text="Terminar Préstamo" />
+        <Button fx:id="botonConsultarPrestamo" layoutX="306.0" layoutY="395.0" mnemonicParsing="false" onAction="#clicConsultarPrestamo" text="Consultar Prestamo" />
+        <Text layoutX="145.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vueltos:" />
+        <Text fx:id="editVueltos" layoutX="198.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$XXXX" />
+      <Button fx:id="botonEliminarLinea" layoutX="379.0" layoutY="168.0" mnemonicParsing="false" onAction="#clicEliminarLinea" text="Eliminar Linea Seleccionada" />
+      <TextField fx:id="numeroPrestamoAConsultar" layoutX="440.0" layoutY="395.0" prefHeight="25.0" prefWidth="103.0" promptText="numero Prestamo" />
+    </children>
+</AnchorPane>
